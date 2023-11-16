@@ -1,0 +1,22 @@
+[
+  {
+    "name": "OpenWatcom V2 (DOS 16-bit)",
+    "compilers": {
+      "C": "wcl",
+      "CXX": "wl"
+    },
+    "preferredGenerator": {
+      "name": "Watcom WMake"
+    },
+    "cmakeSettings": {
+      "CMAKE_SYSTEM_NAME": "DOS",
+      "CMAKE_SYSTEM_PROCESSOR": "I86"
+    },
+    "environmentVariables": {
+      "PATH": "${env:WATCOM}/binl64:${env:WATCOM}/binl:${env:PATH}",
+      "INCLUDE": "${env:WATCOM}/h:${env:INCLUDE}",
+      "EDPATH": "${env:WATCOM}/eddat",
+      "WIPFC": "${env:WATCOM}/wipfc"
+    }
+  }
+]
